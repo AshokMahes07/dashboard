@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>MIS Dashboard</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      integrity="sha512-4oV4XQxG8nM+UuB4L+V5VdXGz1s9M7oL7QJr+0B1xJ9BvWw3N5R5T2T3CqQ2n4KQxV3n6pF0YV8cK0xQpQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="page">
+      <header class="page__header">
+        <div class="header__title">
+          <span class="logo"><i class="fa-solid fa-chart-line"></i></span>
+          <div>
+            <h1>MIS Dashboard</h1>
+            <p>Performance snapshot for projects, compliance, and workforce.</p>
+          </div>
+        </div>
+        <div class="header__actions">
+          <button class="btn btn--ghost">
+            <i class="fa-solid fa-filter"></i>
+            Filter
+          </button>
+          <button class="btn btn--primary">
+            <i class="fa-solid fa-arrow-trend-up"></i>
+            Generate Report
+          </button>
+        </div>
+      </header>
+
+      <section class="grid grid--hero">
+        <article class="card card--wide">
+          <div class="card__head">
+            <h2>Project Details</h2>
+            <span class="badge badge--info">Active</span>
+          </div>
+          <div class="card__metrics">
+            <div class="metric">
+              <span class="metric__icon metric__icon--blue">
+                <i class="fa-solid fa-briefcase"></i>
+              </span>
+              <div>
+                <h3>3</h3>
+                <p>Total Vendors</p>
+              </div>
+            </div>
+            <div class="metric">
+              <span class="metric__icon metric__icon--green">
+                <i class="fa-solid fa-check"></i>
+              </span>
+              <div>
+                <h3>4</h3>
+                <p>Active</p>
+              </div>
+            </div>
+            <div class="metric">
+              <span class="metric__icon metric__icon--orange">
+                <i class="fa-solid fa-circle-xmark"></i>
+              </span>
+              <div>
+                <h3>0</h3>
+                <p>Inactive</p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card__head">
+            <h2>License Details</h2>
+            <span class="badge badge--success">Updated</span>
+          </div>
+          <div class="list">
+            <div class="list__item">
+              <span>Total License</span>
+              <strong>12</strong>
+            </div>
+            <div class="list__item">
+              <span>Expired</span>
+              <strong class="text--danger">3</strong>
+            </div>
+            <div class="list__item">
+              <span>Renewal Due</span>
+              <strong class="text--warning">3</strong>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card__head">
+            <h2>Workforce Composition</h2>
+            <span class="badge badge--warning">Monthly</span>
+          </div>
+          <div class="list">
+            <div class="list__item">
+              <span>Total</span>
+              <strong>9</strong>
+            </div>
+            <div class="list__item">
+              <span>Action Coverage</span>
+              <strong>9</strong>
+            </div>
+            <div class="list__item">
+              <span>Expired Coverage</span>
+              <strong class="text--danger">0</strong>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section class="grid grid--events">
+        <article class="card">
+          <div class="card__head">
+            <h2>Events</h2>
+            <span class="badge badge--info">FY 2024</span>
+          </div>
+          <div class="card__metrics card__metrics--six">
+            <div class="metric small">
+              <span class="metric__icon metric__icon--blue">
+                <i class="fa-solid fa-calendar-day"></i>
+              </span>
+              <div>
+                <h3>15</h3>
+                <p>Total Events</p>
+              </div>
+            </div>
+            <div class="metric small">
+              <span class="metric__icon metric__icon--green">
+                <i class="fa-solid fa-circle-check"></i>
+              </span>
+              <div>
+                <h3>9</h3>
+                <p>Completed</p>
+              </div>
+            </div>
+            <div class="metric small">
+              <span class="metric__icon metric__icon--purple">
+                <i class="fa-solid fa-clipboard"></i>
+              </span>
+              <div>
+                <h3>3</h3>
+                <p>Non-Compliance</p>
+              </div>
+            </div>
+            <div class="metric small">
+              <span class="metric__icon metric__icon--orange">
+                <i class="fa-solid fa-hourglass-half"></i>
+              </span>
+              <div>
+                <h3>3</h3>
+                <p>Pending</p>
+              </div>
+            </div>
+            <div class="metric small">
+              <span class="metric__icon metric__icon--red">
+                <i class="fa-solid fa-ban"></i>
+              </span>
+              <div>
+                <h3>0</h3>
+                <p>Rejected</p>
+              </div>
+            </div>
+            <div class="metric small">
+              <span class="metric__icon metric__icon--gray">
+                <i class="fa-solid fa-lock"></i>
+              </span>
+              <div>
+                <h3>0</h3>
+                <p>Closed</p>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section class="grid grid--columns">
+        <article class="card">
+          <div class="card__head">
+            <h2>Associate Muster</h2>
+            <span class="badge badge--info">Today</span>
+          </div>
+          <div class="card__metrics card__metrics--stack">
+            <div class="metric">
+              <span class="metric__icon metric__icon--blue">
+                <i class="fa-solid fa-users"></i>
+              </span>
+              <div>
+                <h3>400</h3>
+                <p>Total</p>
+              </div>
+            </div>
+            <div class="metric">
+              <span class="metric__icon metric__icon--green">
+                <i class="fa-solid fa-user-check"></i>
+              </span>
+              <div>
+                <h3>360</h3>
+                <p>Live</p>
+              </div>
+            </div>
+            <div class="metric">
+              <span class="metric__icon metric__icon--red">
+                <i class="fa-solid fa-user-xmark"></i>
+              </span>
+              <div>
+                <h3>40</h3>
+                <p>Suspension</p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card__head">
+            <h2>Employee Age Summary</h2>
+            <span class="badge badge--success">Updated</span>
+          </div>
+          <div class="list">
+            <div class="list__item">
+              <span>Employee Age 18-25</span>
+              <strong>8</strong>
+            </div>
+            <div class="list__item">
+              <span>Employee Age 26-35</span>
+              <strong>14</strong>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card__head">
+            <h2>Gratuity</h2>
+            <span class="badge badge--info">Q2</span>
+          </div>
+          <div class="card__metrics">
+            <div class="metric">
+              <span class="metric__icon metric__icon--blue">
+                <i class="fa-solid fa-person"></i>
+              </span>
+              <div>
+                <h3>40</h3>
+                <p>Eligible Employees</p>
+              </div>
+            </div>
+            <div class="metric">
+              <span class="metric__icon metric__icon--green">
+                <i class="fa-solid fa-money-bill-wave"></i>
+              </span>
+              <div>
+                <h3>400</h3>
+                <p>Total Employees</p>
+              </div>
+            </div>
+            <div class="metric">
+              <span class="metric__icon metric__icon--purple">
+                <i class="fa-solid fa-wallet"></i>
+              </span>
+              <div>
+                <h3>1,200,000</h3>
+                <p>Est. Liability</p>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section class="grid grid--columns">
+        <article class="card">
+          <div class="card__head">
+            <h2>Associate Earnings</h2>
+            <span class="badge badge--warning">MTD</span>
+          </div>
+          <div class="card__metrics">
+            <div class="metric">
+              <span class="metric__icon metric__icon--blue">
+                <i class="fa-solid fa-sack-dollar"></i>
+              </span>
+              <div>
+                <h3>360</h3>
+                <p>Earning Head Count</p>
+              </div>
+            </div>
+            <div class="metric">
+              <span class="metric__icon metric__icon--purple">
+                <i class="fa-solid fa-chart-pie"></i>
+              </span>
+              <div>
+                <h3>1,000,000</h3>
+                <p>Gross Pay</p>
+              </div>
+            </div>
+            <div class="metric">
+              <span class="metric__icon metric__icon--orange">
+                <i class="fa-solid fa-coins"></i>
+              </span>
+              <div>
+                <h3>840,000</h3>
+                <p>Net Pay</p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card__head">
+            <h2>Associate Man Days</h2>
+            <span class="badge badge--info">Month</span>
+          </div>
+          <div class="card__metrics">
+            <div class="metric">
+              <span class="metric__icon metric__icon--blue">
+                <i class="fa-solid fa-calendar-check"></i>
+              </span>
+              <div>
+                <h3>320</h3>
+                <p>Total Man Days</p>
+              </div>
+            </div>
+            <div class="metric">
+              <span class="metric__icon metric__icon--orange">
+                <i class="fa-solid fa-business-time"></i>
+              </span>
+              <div>
+                <h3>480,000</h3>
+                <p>Total Overtime</p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card__head">
+            <h2>Employee EPF Summary</h2>
+            <span class="badge badge--success">Updated</span>
+          </div>
+          <div class="card__metrics">
+            <div class="metric">
+              <span class="metric__icon metric__icon--blue">
+                <i class="fa-solid fa-id-card"></i>
+              </span>
+              <div>
+                <h3>320</h3>
+                <p>EPF Head Count</p>
+              </div>
+            </div>
+            <div class="metric">
+              <span class="metric__icon metric__icon--purple">
+                <i class="fa-solid fa-coins"></i>
+              </span>
+              <div>
+                <h3>480,000</h3>
+                <p>Total Contribution</p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card__head">
+            <h2>Employee ESIC Summary</h2>
+            <span class="badge badge--warning">Review</span>
+          </div>
+          <div class="card__metrics">
+            <div class="metric">
+              <span class="metric__icon metric__icon--green">
+                <i class="fa-solid fa-heart-pulse"></i>
+              </span>
+              <div>
+                <h3>200</h3>
+                <p>Insured Persons</p>
+              </div>
+            </div>
+            <div class="metric">
+              <span class="metric__icon metric__icon--blue">
+                <i class="fa-solid fa-file-invoice-dollar"></i>
+              </span>
+              <div>
+                <h3>240,000</h3>
+                <p>Total Contribution</p>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section class="grid grid--columns">
+        <article class="card">
+          <div class="card__head">
+            <h2>Statutory Example</h2>
+            <span class="badge badge--info">FY 2024</span>
+          </div>
+          <div class="card__metrics">
+            <div class="metric">
+              <span class="metric__icon metric__icon--blue">
+                <i class="fa-solid fa-file-circle-check"></i>
+              </span>
+              <div>
+                <h3>0</h3>
+                <p>DLF Accepted</p>
+              </div>
+            </div>
+            <div class="metric">
+              <span class="metric__icon metric__icon--red">
+                <i class="fa-solid fa-file-circle-xmark"></i>
+              </span>
+              <div>
+                <h3>0</h3>
+                <p>DLF Rejected</p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card__head">
+            <h2>Professional Tax</h2>
+            <span class="badge badge--warning">Quarter</span>
+          </div>
+          <div class="card__metrics">
+            <div class="metric">
+              <span class="metric__icon metric__icon--blue">
+                <i class="fa-solid fa-file-invoice"></i>
+              </span>
+              <div>
+                <h3>280</h3>
+                <p>PT Head Count</p>
+              </div>
+            </div>
+            <div class="metric">
+              <span class="metric__icon metric__icon--purple">
+                <i class="fa-solid fa-sack-dollar"></i>
+              </span>
+              <div>
+                <h3>72,000</h3>
+                <p>PT Amount</p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card__head">
+            <h2>Labour Welfare Fund</h2>
+            <span class="badge badge--success">Updated</span>
+          </div>
+          <div class="card__metrics">
+            <div class="metric">
+              <span class="metric__icon metric__icon--blue">
+                <i class="fa-solid fa-people-group"></i>
+              </span>
+              <div>
+                <h3>240</h3>
+                <p>LWF Head Count</p>
+              </div>
+            </div>
+            <div class="metric">
+              <span class="metric__icon metric__icon--orange">
+                <i class="fa-solid fa-coins"></i>
+              </span>
+              <div>
+                <h3>30,000</h3>
+                <p>LWF Amount</p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card__head">
+            <h2>License Applicability</h2>
+            <span class="badge badge--info">Live</span>
+          </div>
+          <div class="card__metrics">
+            <div class="metric">
+              <span class="metric__icon metric__icon--blue">
+                <i class="fa-solid fa-id-badge"></i>
+              </span>
+              <div>
+                <h3>0</h3>
+                <p>Total Vendors</p>
+              </div>
+            </div>
+            <div class="metric">
+              <span class="metric__icon metric__icon--green">
+                <i class="fa-solid fa-check-double"></i>
+              </span>
+              <div>
+                <h3>0</h3>
+                <p>Applicable</p>
+              </div>
+            </div>
+            <div class="metric">
+              <span class="metric__icon metric__icon--red">
+                <i class="fa-solid fa-ban"></i>
+              </span>
+              <div>
+                <h3>0</h3>
+                <p>Not Applicable</p>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
